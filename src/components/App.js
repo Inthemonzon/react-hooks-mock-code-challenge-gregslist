@@ -14,8 +14,8 @@ function App() {
   console.log(listingData)
   return (
     <div className="app">
-      {/* <Header /> */}
-      {/* <ListingsContainer listingData={listingData}/> */}
+       <Header />
+       <ListingsContainer listingData={listingData}/> 
     </div>
   );
 }

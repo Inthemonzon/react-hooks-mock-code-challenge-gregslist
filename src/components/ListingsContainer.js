@@ -1,11 +1,14 @@
 import React from "react";
 import ListingCard from "./ListingCard";
+import Search from "./Search";
 
-function ListingsContainer({listingData}) {
+function ListingsContainer({listingData, searchValue}) {
+  console.log(searchValue)
 
   const listings = listingData.map((item) => {
-    <ListingCard image={item.image} description={item.description} location={item.location}/>
-  })
+    return(
+    <ListingCard key={item.id} image={item.image} description={item.description} location={item.location}/>
+  )})
   return (
 
     <main>
